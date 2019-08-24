@@ -63,10 +63,7 @@ export const resolvers = {
         data: { cartItems: newCartItems }
       });
 
-      cache.writeQuery({
-        query: GET_CART_ITEMS,
-        data: { cartItems: newCartItems }
-      });
+      return newCartItems;
     }
   }
 };

@@ -3,7 +3,7 @@ import { Query } from 'react-apollo';
 import { gql } from 'apollo-boost';
 
 import CollectionPage from './collection.component';
-import Spinner from '../../components/spinner';
+import Spinner from '../../components/spinner/spinner.component';
 
 const GET_COLLECTION_BY_TITLE = gql`
   query getCollectionsByTitle($title: String!) {

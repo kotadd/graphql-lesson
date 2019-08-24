@@ -1,13 +1,13 @@
 import React from 'react';
-import { Mutation, Query, graphql } from 'react-apollo';
+import { graphql } from 'react-apollo';
 import { flowRight } from 'lodash';
 import { gql } from 'apollo-boost';
 
 import CartIcon from './cart-icon.component';
 
 const TOGGLE_CART_HIDDEN = gql`
-  mutation ToggleCartHiden {
-    toggleCartHiden @client
+  mutation ToggleCartHidden {
+    toggleCartHidden @client
   }
 `;
 
